@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="fragments/header :: head"></th:block>
+</head>
+<body>
+<div class="container">
+    <a th:href="@{/pageTwo}">Redirect to page 2</a>
+
+    <!--  <h1 th:text="${homeTitle}"/>
+      <h2 th:text="${course1.name}"/>
+      <h2 th:text="${course1.type}"/>
+      <h3 th:text="${course1.subType}"/>
+      <br><br><br><br>-->
+    <!-- <form th:action="@{/addCourse}" method="POST">
+         <label>Course name</label>
+         <input type="text" th:name="name"/>
+         <label>Course type</label>
+         <input type="text" th:name="type"/>
+         <input type="submit"/>
+     </form>-->
+    <!--<form th:action="@{/getAll}" th:method="get">
+        <button type="submit" id="submitButton">Click to get all courses</button>
+    </form>
+    <tr th:each="singleCourseName : ${courseName}">
+        <span>Course name: </span><td th:text="${singleCourseName}"/><br>
+    </tr>
+    <th:block th:include="fragments/footer :: footer"></th:block>-->
+</div>
+</body>
+</html>

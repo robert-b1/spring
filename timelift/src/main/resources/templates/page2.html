@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="fragments/header :: head"></th:block>
+</head>
+<body>
+<div class="container">
+
+    <form th:action="@{/getAll}" th:method="get">
+        <button type="submit" id="submitButton">Click to get all courses</button>
+    </form>
+    <tr th:each="singleCourseName : ${courseName}">
+        <span>Course name: </span><td th:text="${singleCourseName}"/><br>
+    </tr>
+    <th:block th:include="fragments/footer :: footer"></th:block>
+</div>
+</body>
+</html>
